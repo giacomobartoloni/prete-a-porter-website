@@ -1,0 +1,158 @@
+---
+---
+
+<header>
+  <div class="hero-content">
+    <img src="/logo.png" alt="Prete-à-Porter" class="hero-logo" />
+    <h1 class="main-title">Pr<span>e</span>te<br />-à-Porter</h1>
+    <div class="accent-line"></div>
+    <p class="subtitle">Il tuo ghostwriter personale.<br />Prepara l'omelia perfetta con l'AI.</p>
+    <span class="badge">v0.1 · progetto in divenire</span>
+    <div class="epigraph">
+      <p>&ldquo;Nel tempo dell&rsquo;intelligenza artificiale, in cui la dignit&agrave; umana rischia di essere oscurata da nuove forme di disumanizzazione, abbiamo il dovere urgente di restare profondamente umani.&rdquo;</p>
+      <cite>&mdash; Leone XIV, <em>Magnifica Humanitas</em> &sect;15</cite>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scorri</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</header>
+
+<style>
+  header {
+    position: relative;
+    min-height: 80svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--gold);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 48px 24px 72px;
+    max-width: 720px;
+  }
+
+  .hero-logo {
+    height: 220px;
+    width: auto;
+    display: block;
+    margin: 0 auto 32px;
+    filter: drop-shadow(0 0 40px rgba(196,154,46,0.35)) drop-shadow(0 0 80px rgba(196,154,46,0.15));
+  }
+
+  .main-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2.4rem, 9vw, 8rem);
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    animation: fadeDown 1s ease 0.1s both;
+    text-align: center;
+  }
+
+  .main-title span {
+    color: var(--white);
+    text-shadow:
+      0 0 3px rgba(0,0,0,0.5),
+      0 0 8px rgba(0,0,0,0.25);
+  }
+
+  .accent-line {
+    width: 80px;
+    height: 1.5px;
+    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+    margin: 28px auto;
+    animation: fadeDown 1s ease 0.2s both;
+  }
+
+  .subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-style: italic;
+    color: var(--ink-mid);
+    max-width: 480px;
+    margin: 0 auto 32px;
+    line-height: 1.75;
+    animation: fadeDown 1s ease 0.3s both;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(13,13,13,0.85);
+    color: var(--terminal-green);
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.72rem;
+    padding: 7px 16px;
+    border-radius: 2px;
+    letter-spacing: 0.08em;
+    animation: fadeDown 1s ease 0.4s both;
+    border: 1px solid rgba(57,255,20,0.2);
+    margin-bottom: 32px;
+  }
+
+  .epigraph {
+    max-width: 520px;
+    margin: 32px auto 48px;
+    animation: fadeDown 1s ease 0.5s both;
+  }
+
+  .epigraph p {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(0.75rem, 2vw, 0.95rem);
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--ink-mid);
+    margin-bottom: 8px;
+  }
+
+  .epigraph cite {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    animation: fadeDown 1.5s ease 1s both;
+  }
+  .scroll-hint span {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    color: rgba(26,18,8,0.35);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .scroll-arrow {
+    width: 1px;
+    height: 32px;
+    background: linear-gradient(to bottom, rgba(26,18,8,0.3), transparent);
+    animation: scrollPulse 2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse {
+    0%, 100% { opacity: 0.3; transform: scaleY(1); }
+    50%       { opacity: 0.9; transform: scaleY(1.15); }
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>

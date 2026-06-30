@@ -1,0 +1,101 @@
+---
+---
+
+<section class="reveal">
+  <div class="section-label">// 02 — Sotto il Cofano</div>
+  <h2>Un progetto di apprendimento,<br />non di sostituzione.</h2>
+  <p>
+    La verità è semplice: sto imparando a costruire con queste tecnologie. Ho scelto un tema volutamente <strong>scomodo</strong> — l'omelia, uno dei formati più umani che esistano — per testare i limiti, non per abbatterli.
+  </p>
+  <div class="terminal">
+    <div class="terminal-line"><span class="comment"># stack tecnico</span></div>
+    <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat motivation.txt</span></div>
+    <div class="terminal-line"><span class="out">→ imparare le API dei modelli linguistici</span></div>
+    <div class="terminal-line"><span class="out">→ esplorare prompt engineering su testi liturgici</span></div>
+    <div class="terminal-line"><span class="out">→ provocare il catastrofismo sull'AI</span></div>
+    <div class="terminal-line"><span class="out">→ divertirmi nel farlo</span></div>
+    <div class="terminal-line">&nbsp;</div>
+    <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat disclaimer.txt</span></div>
+    <div class="terminal-line"><span class="out">NESSUN PRETE È STATO LICENZIATO DURANTE</span></div>
+    <div class="terminal-line"><span class="out">LA REALIZZAZIONE DI QUESTO PROGETTO.</span></div>
+    <div class="terminal-line">&nbsp;</div>
+    <div class="terminal-line"><span class="comment"># tempistica</span></div>
+    <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">echo "pre-dating Magnifica Humanitas (2026)"</span></div>
+    <div class="terminal-line"><span class="out">→ il progetto è nato come provocazione prima dell'enciclica</span></div>
+    <div class="terminal-line"><span class="out">→ la domanda ha trovato una cornice nel Magistero</span></div>
+    <div class="terminal-line">&nbsp;</div>
+    <div class="terminal-line"><span class="comment"># repository</span></div>
+    <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">cat repo.url</span></div>
+    <div class="terminal-line"><span class="out">→ <a href="https://github.com/giacomobartoloni/prete-a-porter" target="_blank">github.com/giacomobartoloni/prete-a-porter</a></span></div>
+  </div>
+</section>
+
+<style>
+  section {
+    width: 100%;
+    padding: 72px max(32px, calc((100% - 780px) / 2));
+    background: var(--parchment-dark);
+  }
+
+  .section-label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: var(--ink-mid);
+    margin-bottom: 1.4em;
+  }
+
+  p strong {
+    color: var(--ink);
+    font-style: italic;
+  }
+
+  .terminal {
+    background: var(--terminal-bg);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .terminal::before {
+    content: '● ● ●';
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 0.55rem;
+    letter-spacing: 6px;
+    color: #444;
+  }
+
+  .terminal-line {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.85rem;
+    line-height: 1.9;
+    color: var(--terminal-dim);
+  }
+
+  .terminal-line .prompt { color: var(--gold-light); }
+  .terminal-line .cmd    { color: #fff; }
+  .terminal-line .out    { color: var(--terminal-green); }
+  .terminal-line .out a  { color: var(--terminal-green); text-decoration: underline; text-decoration-color: rgba(57,255,20,0.3); }
+  .terminal-line .comment{ color: #555; font-style: italic; }
+</style>

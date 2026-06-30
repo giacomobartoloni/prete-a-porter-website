@@ -1,0 +1,104 @@
+---
+---
+
+<section class="reveal">
+  <div class="section-label">// 03 — Perché Proprio le Omelie?</div>
+  <h2>Il formato più umano<br />come banco di prova.</h2>
+  <p>Ho scelto le omelie perché condensano tutto quello che l'AI <em>non</em> può essere:</p>
+  <div class="provocation-grid">
+    <div class="prov-cell">
+      <span class="icon">📖</span>
+      <h3>Interpretazione Viva</h3>
+      <p>Un testo sacro va incarnato, non parafrasato. L'omelia parla da una vita, non da un dataset.</p>
+    </div>
+    <div class="prov-cell">
+      <span class="icon">🕊️</span>
+      <h3>Presenza Fisica</h3>
+      <p>Il pulpito implica un corpo, una voce, uno sguardo sulla comunità che hai davanti. Token non ne hanno.</p>
+    </div>
+    <div class="prov-cell">
+      <span class="icon">⚖️</span>
+      <h3>Responsabilità Etica</h3>
+      <p>Chi predica risponde di ciò che dice. Un modello non porta peso morale. E quella differenza è enorme.</p>
+    </div>
+    <div class="prov-cell">
+      <span class="icon">💬</span>
+      <h3>Comunità Reale</h3>
+      <p>L'omelia migliore nasce da chi conosce i suoi ascoltatori per nome. L'AI li conosce come distribuzione statistica.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 72px 32px;
+  }
+
+  .section-label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: var(--ink-mid);
+    margin-bottom: 1.4em;
+  }
+
+  .provocation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 40px 0;
+    border: 1px solid var(--parchment-dark);
+  }
+
+  @media (max-width: 600px) {
+    .provocation-grid { grid-template-columns: 1fr; }
+  }
+
+  .prov-cell {
+    padding: 28px 24px;
+    background: var(--parchment);
+    transition: background 0.2s;
+  }
+
+  .prov-cell:hover { background: var(--parchment-dark); }
+
+  .prov-cell .icon {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .prov-cell h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+
+  .prov-cell p {
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+  }
+</style>

@@ -1,0 +1,122 @@
+---
+---
+
+<section class="reveal steps-section">
+  <img class="steps-bg" src="/hero.webp" alt="" />
+  <div class="steps-overlay"></div>
+  <div class="steps-content">
+    <div class="section-label">// 04 — Come Funziona</div>
+    <h2>Tre passi verso<br />l'omelia artificiale.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">I</div>
+        <div class="step-content">
+          <h3>Scegli il Vangelo</h3>
+          <p>Inserisci la domenica del calendario liturgico o incolla direttamente il brano evangelico. Il modello conosce il rito romano.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">II</div>
+        <div class="step-content">
+          <h3>Configura il Tono</h3>
+          <p>Pastorale, accademico, narrativo, provocatorio. Scegli lunghezza e pubblico. Fin qui, è solo prompt engineering.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">III</div>
+        <div class="step-content">
+          <h3>Leggi. Rifletti. Riscrivi.</h3>
+          <p>L'output non è la fine — è l'inizio di una riflessione. Usa il testo generato come specchio, non come scrittura. Questo è il vero punto del progetto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .steps-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .steps-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    filter: brightness(0.4) saturate(0.6);
+  }
+
+  .steps-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(245,237,224,0.92) 0%,
+      rgba(245,237,224,0.7) 50%,
+      rgba(245,237,224,0.95) 100%
+    );
+    pointer-events: none;
+  }
+
+  .steps-content {
+    position: relative;
+    z-index: 1;
+    padding: 72px max(32px, calc((100% - 780px) / 2));
+  }
+
+  .section-label {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 24px;
+  }
+
+  .steps {
+    counter-reset: steps;
+    margin: 40px 0;
+  }
+
+  .step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+    align-items: start;
+  }
+
+  .step-number {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--parchment-dark);
+    line-height: 1;
+    text-align: right;
+  }
+
+  .step-content h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .step-content p {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+</style>
