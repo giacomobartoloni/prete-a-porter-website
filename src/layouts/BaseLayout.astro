@@ -15,6 +15,15 @@ const { title, description = "Prete-à-porter — Ghostwriter per Sacerdoti" } =
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="generator" content={Astro.generator} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content="https://prete-a-porter.dev/logo.png" />
+  <meta property="og:url" content="https://prete-a-porter.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content="https://prete-a-porter.dev/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Source+Code+Pro:wght@400;600&family=Inter:wght@700;900&display=swap" rel="stylesheet" />
