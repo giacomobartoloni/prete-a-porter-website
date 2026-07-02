@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Prete-à-porter: AI-powered Catholic homily generator born as a joke, turned into a provocation. Drop in the Sunday Gospel, pick a tone, and get a pulpit-ready text in seconds." } = Astro.props;
+const { title, description = "Prete-à-porter: AI-powered Catholic homily generator born as a joke, turned provocation. Drop in the Sunday Gospel, pick a tone, get a pulpit-ready text." } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -19,19 +19,20 @@ const { title, description = "Prete-à-porter: AI-powered Catholic homily genera
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content="https://prete-a-porter.dev/og-image.png" />
-  <meta property="og:image:width" content="2568" />
-  <meta property="og:image:height" content="1846" />
+  <meta property="og:image" content="https://prete-a-porter.dev/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://prete-a-porter.dev/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content="https://prete-a-porter.dev/og-image.png" />
+  <meta name="twitter:image" content="https://prete-a-porter.dev/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Source+Code+Pro:wght@400;600&family=Inter:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
   <div class="page-border"></div>
