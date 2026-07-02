@@ -1,0 +1,13 @@
+{
+  "name": "Prete-à-Porter — Ghostwriter per Sacerdoti",
+  "short_name": "Prete-à-Porter",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone",
+  "lang": "it"
+}
