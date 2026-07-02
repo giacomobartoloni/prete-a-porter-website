@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Prete-à-porter — Ghostwriter per Sacerdoti" } = Astro.props;
+const { title, description = "Prete-à-porter: AI-powered Catholic homily generator born as a joke, turned into a provocation. Drop in the Sunday Gospel, pick a tone, and get a pulpit-ready text in seconds." } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -15,15 +15,18 @@ const { title, description = "Prete-à-porter — Ghostwriter per Sacerdoti" } =
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="generator" content={Astro.generator} />
+  <meta name="author" content="Giacomo Bartoloni" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content="https://prete-a-porter.dev/logo.png" />
+  <meta property="og:image" content="https://prete-a-porter.dev/og-image.png" />
+  <meta property="og:image:width" content="2568" />
+  <meta property="og:image:height" content="1846" />
   <meta property="og:url" content="https://prete-a-porter.dev/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content="https://prete-a-porter.dev/logo.png" />
+  <meta name="twitter:image" content="https://prete-a-porter.dev/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Source+Code+Pro:wght@400;600&family=Inter:wght@700;900&display=swap" rel="stylesheet" />
