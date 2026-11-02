@@ -1,43 +1,48 @@
-# Astro Starter Kit: Minimal
+# Prete-à-Porter website
+
+Sito vetrina di [Prete-à-Porter](https://prete-a-porter.dev), realizzato con **Astro 7**.
+Il sito è prerenderizzato (HTML statico) ed è distribuito tramite Cloudflare Workers Static Assets.
+
+## Requisiti
+
+- Node.js **22.23.4 o superiore** (vedi `.nvmrc`)
+- npm
+
+## Sviluppo
 
 ```sh
-npm create astro@latest -- --template minimal
+npm ci
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Apri `http://localhost:4321`.
 
-## 🚀 Project Structure
+## Verifica e build
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm ci
+npm run build
+npm run preview
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+La build statica viene generata in `dist/`. La CI esegue `npm ci` e `npm run build` sulle pull request e su `main`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Struttura
 
-Any static assets, like images, can be placed in the `public/` directory.
+- `src/pages/`: homepage e privacy policy
+- `src/components/`: sezioni della landing page
+- `src/layouts/`: layout, metadati e stili globali
+- `public/`: immagini, icone e manifest
+- `astro.config.mjs`: configurazione Astro
+- `wrangler.json`: impostazioni di deploy Cloudflare con asset statici da `dist/`
 
-## 🧞 Commands
+## Aggiornamento dipendenze
 
-All commands are run from the root of the project, from a terminal:
+```sh
+npm install astro@latest
+npm run build
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Committa insieme `package.json` e `package-lock.json`. Per la migrazione a Astro 7, `compressHTML: true` mantiene la gestione degli spazi HTML della versione 6: prima di rimuoverlo, verifica visivamente i testi con elementi inline.
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Documentazione: [Astro](https://docs.astro.build/) · [Cloudflare Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/).
