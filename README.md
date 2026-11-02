@@ -5,7 +5,7 @@ Il sito è prerenderizzato (HTML statico) ed è distribuito tramite Cloudflare W
 
 ## Requisiti
 
-- Node.js **22.12.0 o superiore** (vedi `.nvmrc`)
+- Node.js **22.23.4 o superiore** (vedi `.nvmrc`)
 - npm
 
 ## Sviluppo
