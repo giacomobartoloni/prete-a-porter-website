@@ -27,6 +27,10 @@
       <p>L'omelia migliore nasce da chi conosce i suoi ascoltatori per nome. L'AI li conosce come distribuzione statistica.</p>
     </div>
   </div>
+  <blockquote class="ethics-quote">
+    <p>La domanda non è se una macchina possa svolgere un certo compito. La domanda è se debba farlo.</p>
+    <cite>-- J. Weizenbaum</cite>
+  </blockquote>
 </section>
 
 <style>
@@ -100,5 +104,30 @@
     font-size: 0.92rem;
     line-height: 1.65;
     margin-bottom: 0;
+  }
+  .ethics-quote {
+    margin: 52px 0 0;
+    padding: 20px 0 20px 28px;
+    border-left: 3px solid var(--red);
+  }
+
+  .ethics-quote p {
+    font-size: clamp(1.2rem, 2.8vw, 1.55rem);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  .ethics-quote cite {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.7rem;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+  }
+
+  @media (max-width: 600px) {
+    .ethics-quote { margin-top: 36px; padding-left: 20px; }
   }
 </style>
